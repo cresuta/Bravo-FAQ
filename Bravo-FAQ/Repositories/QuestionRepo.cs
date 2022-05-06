@@ -37,6 +37,49 @@ namespace Bravo_FAQ.Repositories
             }
         }
 
+        public void Add(Question question)
+        {
+            using (var conn = Connection)
+            {
+                conn.Open();
+                using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = @"
+                        INSERT INTO Question (
+                            Content)
+                        OUTPUT INSERTED.ID
+                        VALUES (
+                             @Content)";
+
+                    DbUtils.AddParameter(cmd, "@Content", question.Content);
+
+                    question.Id = (int)cmd.ExecuteScalar();
+                }
+            }
+        }
+
+        public void Update(Question question)
+        {
+            using (var conn = Connection)
+            {
+                conn.Open();
+                using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = @"
+                        UPDATE Question 
+                            SET Content = @Content
+                    
+                        WHERE Id = @Id";
+
+                    DbUtils.AddParameter(cmd, "@Content", question.Content);
+                    DbUtils.AddParameter(cmd, "@Id", question.Id);
+
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+        }
+
         private Question NewQuestionFromReader(SqlDataReader reader)
         {
             return new Question()
