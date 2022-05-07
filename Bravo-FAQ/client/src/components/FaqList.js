@@ -2,20 +2,21 @@ import React, { useContext, useEffect } from "react";
 import { FaqContext } from "../providers/FaqProvider";
 
 const FaqList = () => {
-  const { questions, getAllQuestions } = useContext(FaqContext);
+  const { answers, getAllAnswers } = useContext(FaqContext);
 
   useEffect(() => {
-    getAllQuestions();
+    getAllAnswers();
   }, []);
 
   return (
-    <div>
-      {questions.map((question) => (
-        <div key={question.id}>
-          <p>{question.content}</p>
-        </div>
+    <>
+      {answers.map((answer) => (
+        <tr key={answer.id}>
+            <td>{answer.question.content}</td>
+          <td>{answer.content}</td>
+        </tr>
       ))}
-    </div>
+  </>
   );
 };
 
