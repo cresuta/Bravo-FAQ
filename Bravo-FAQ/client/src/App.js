@@ -20,7 +20,7 @@ class App extends React.Component {
   return (
     <div className="MainDiv">
       <div class="jumbotron text-center bg-sky">
-          <h3>Therichpost.com</h3>
+          <h3>Frequently Asked Questions</h3>
       </div>
       
       <div className="container">
@@ -37,8 +37,8 @@ class App extends React.Component {
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
+                    <th>Question</th>
+                    <th>Answer</th>
                 </tr>
             </tfoot>
         </table>
