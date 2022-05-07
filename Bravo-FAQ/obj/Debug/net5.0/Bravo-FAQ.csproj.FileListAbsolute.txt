@@ -65,3 +65,6 @@ C:\Users\newforce\workspace\Bravo-Assignment\Bravo-FAQ\Bravo-FAQ\bin\Debug\net5.
 C:\Users\newforce\workspace\Bravo-Assignment\Bravo-FAQ\Bravo-FAQ\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\newforce\workspace\Bravo-Assignment\Bravo-FAQ\Bravo-FAQ\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\newforce\workspace\Bravo-Assignment\Bravo-FAQ\Bravo-FAQ\obj\Debug\net5.0\Bravo-FAQ.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\newforce\workspace\Bravo-Assignment\Bravo-FAQ\Bravo-FAQ\bin\Debug\net5.0\client\package-lock.json
+C:\Users\newforce\workspace\Bravo-Assignment\Bravo-FAQ\Bravo-FAQ\bin\Debug\net5.0\client\package.json
+C:\Users\newforce\workspace\Bravo-Assignment\Bravo-FAQ\Bravo-FAQ\bin\Debug\net5.0\client\public\manifest.json
