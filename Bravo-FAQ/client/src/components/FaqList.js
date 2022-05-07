@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { FaqContext } from "../providers/FaqProvider";
+import { FaqContext, FaqProvider } from "../providers/FaqProvider";
 
 const FaqList = () => {
   const { answers, getAllAnswers } = useContext(FaqContext);

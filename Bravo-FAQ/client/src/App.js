@@ -12,10 +12,9 @@ import $ from 'jquery';
 class App extends React.Component {
   componentDidMount() {
     //initialize datatable
-    $(document).ready(function () {
-        $('#example').DataTable();
-    });
+    $('#example').DataTable();
  }
+
   render(){
 
   return (
@@ -34,9 +33,7 @@ class App extends React.Component {
                 </tr>
             </thead>
             <tbody>
-                <FaqProvider>
-                    <FaqList/>
-                </FaqProvider>
+               <FaqList/>
             </tbody>
             <tfoot>
                 <tr>
