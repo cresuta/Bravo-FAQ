@@ -1,4 +1,6 @@
-﻿namespace Bravo_FAQ.Models
+﻿using System;
+
+namespace Bravo_FAQ.Models
 {
     public class Answer
     {

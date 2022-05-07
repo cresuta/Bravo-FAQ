@@ -26,6 +26,7 @@ namespace Bravo_FAQ
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IQuestionRepo, QuestionRepo>();
+            services.AddTransient<IAnswerRepo, AnswerRepo>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
